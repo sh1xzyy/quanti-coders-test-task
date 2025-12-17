@@ -7,7 +7,7 @@ export const RegistrationFormSection = () => {
 
   return (
     <div className="section">
-      <div className="formContainer">
+      <div className="container">
         <h1 className="mainTitle">Заповніть форму</h1>
 
         <div className="toggleContainer">
@@ -35,57 +35,50 @@ export const RegistrationFormSection = () => {
 
         <div className="formCard">
           <div className="formGrid">
-            <div>
+            <div className="inputWrapper">
               <label className="formLabel">Ім'я</label>
               <input className="formInput" />
             </div>
-            <div>
+            <div className="inputWrapper">
               <label className="formLabel">Фамілія</label>
               <input className="formInput" />
             </div>
-            <div>
-              <label className="formLabel">Країна</label>
-              <input className="formInput" />
-            </div>
-          </div>
-
-          <div className="formGrid">
-            <div>
+            <div className={clsx("inputWrapper", "full")}>
               <label className="formLabel">Назва компанії, організації</label>
               <input className="formInput" />
+              <div className="logoButtonContainer">
+                <button className="logoButton">+ Логотип</button>
+              </div>
             </div>
-            <div>
-              <label className="formLabel">Місто</label>
-              <input className="formInput" />
-            </div>
-            <div>
-              <label className="formLabel">Штат, район</label>
-              <input className="formInput" />
-            </div>
-          </div>
-
-          <div className="logoButtonContainer">
-            <button className="logoButton">+ Логотип</button>
-          </div>
-
-          <div className="formGridTwo">
-            <div>
+            <div className={clsx("inputWrapper", "full")}>
               <label className="formLabel">Email-адрес</label>
               <input className="formInput" />
             </div>
-            <div>
-              <label className="formLabel">Адреса</label>
+            <div className={clsx("inputWrapper", "full")}>
+              <label className="formLabel">Номер телефону</label>
               <input className="formInput" />
             </div>
           </div>
 
           <div className="formGridTwo">
-            <div>
-              <label className="formLabel">Номер телефону</label>
+            <div className={clsx("inputWrapper", "full")}>
+              <label className="formLabel">Країна</label>
               <input className="formInput" />
             </div>
-            <div>
-              <label className="formLabel">Поштовий індекс</label>
+            <div className="inputWrapper">
+              <label className="formLabel">Мiсто</label>
+              <input className="formInput" />
+            </div>
+            <div className="inputWrapper">
+              <label className="formLabel">Штат, район</label>
+              <input className="formInput" />
+            </div>
+            <div className={clsx("inputWrapper", "full")}>
+              <label className="formLabel">Адреса</label>
+              <input className="formInput" />
+            </div>
+            <div className="inputWrapper">
+              <label className="formLabel">Поштовий iндекс</label>
               <input className="formInput" />
             </div>
           </div>

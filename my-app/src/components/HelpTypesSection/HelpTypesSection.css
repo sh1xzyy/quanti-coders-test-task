@@ -102,8 +102,36 @@
   opacity: 0.8;
 }
 
+.buttonContainer {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  padding: 16px 128px;
+  background: linear-gradient(90deg, #ec4899 0%, #a855f7 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(236, 72, 153, 0.4);
+}
+
 @media (max-width: 768px) {
   .helpTypesGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .submitButton {
+    padding: 16px 64px;
   }
 }
