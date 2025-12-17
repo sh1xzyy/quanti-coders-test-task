@@ -1,0 +1,44 @@
+.helpTypesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.helpCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.helpCardIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  border: 2px solid rgba(114, 114, 114, 0.2);
+}
+
+.helpCardIconWrapperActive {
+  background-color: #523170;
+}
+
+.helpCardIcon {
+  font-size: 32px;
+}
+
+.helpCardTitle {
+  font-weight: 600;
+  text-align: center;
+  white-space: pre-line;
+  color: #9ca3af;
+}
+
+.helpCardTitleActive {
+  color: #1f2937;
+}
