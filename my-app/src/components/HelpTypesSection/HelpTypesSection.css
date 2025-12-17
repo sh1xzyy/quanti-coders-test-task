@@ -1,0 +1,42 @@
+.cardInputSection {
+  background: rgba(191, 219, 254, 0.3);
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.cardInputContent {
+  color: #ffffff;
+}
+
+.cardInputLabel {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.cardNumberGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.cardInput {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.cardInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cardDetailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
