@@ -1,5 +1,11 @@
+import { HelpTypeCard } from "./components/HelpTypeCard/HelpTypeCard";
+
 function App() {
-  return <div>Test</div>;
+  return (
+    <div>
+      <HelpTypeCard />
+    </div>
+  );
 }
 
 export default App;
