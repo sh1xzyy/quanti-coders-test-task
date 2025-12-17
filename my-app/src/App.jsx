@@ -1,6 +1,7 @@
 import { HelpTypeCard } from "./components/HelpTypeCard/HelpTypeCard";
 import { HelpTypesSection } from "./components/HelpTypesSection/HelpTypesSection";
 import { PaymentMethod } from "./components/PaymentMethod/PaymentMethod";
+import { RegistrationFormSection } from "./components/RegistrationFormSection/RegistrationFormSection";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <HelpTypeCard />
       <PaymentMethod />
       <HelpTypesSection />
+      <RegistrationFormSection />
     </div>
   );
 }
