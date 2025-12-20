@@ -21,7 +21,7 @@ export const HelpTypesSection = () => {
       title: "VISA",
       subtitle: "Карта Visa/MasterCard",
     },
-    { id: "privat24", icon: "🏦", title: "Приват24", subtitle: "Приват24" },
+    { id: "privat24", title: "Приват24", subtitle: "Приват24" },
     {
       id: "terminal",
       icon: "📱",
@@ -55,17 +55,7 @@ export const HelpTypesSection = () => {
             <div>
               <h3 className="sectionTitle">Спосіб оплати</h3>
               <div className="paymentMethodsGrid">
-                {paymentMethods.slice(0, 3).map((method) => (
-                  <PaymentMethod
-                    key={method.id}
-                    {...method}
-                    isActive={activePayment === method.id}
-                    onClick={() => setActivePayment(method.id)}
-                  />
-                ))}
-              </div>
-              <div className="paymentMethodsGrid">
-                {paymentMethods.slice(3, 5).map((method) => (
+                {paymentMethods.map((method) => (
                   <PaymentMethod
                     key={method.id}
                     {...method}
@@ -83,26 +73,17 @@ export const HelpTypesSection = () => {
                   <div className="cardInputLabel">Номер карти</div>
                   <div className="cardNumberGrid">
                     {[1, 2, 3, 4].map((i) => (
-                      <input
-                        key={i}
-                        className="cardInput"
-                        placeholder="****"
-                        maxLength="4"
-                      />
+                      <input key={i} className="cardInput" maxLength="4" />
                     ))}
                   </div>
                   <div className="cardDetailsGrid">
                     <div>
                       <div className="cardInputLabel">Термін дії</div>
-                      <input className="cardInput" placeholder="MM/YY" />
+                      <input className="cardInput" />
                     </div>
                     <div>
                       <div className="cardInputLabel">CVC/CVV</div>
-                      <input
-                        className="cardInput"
-                        placeholder="***"
-                        maxLength="3"
-                      />
+                      <input className="cardInput" maxLength="3" />
                     </div>
                   </div>
                 </div>
